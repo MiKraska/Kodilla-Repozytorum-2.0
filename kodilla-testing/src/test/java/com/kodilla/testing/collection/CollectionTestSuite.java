@@ -36,11 +36,15 @@ public class CollectionTestSuite {
     @Test
     public  void testOddNumberExterminatorNormalList(){
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
+
         ArrayList<Integer> test2 = new ArrayList<Integer>();
         test2.add(2); test2.add(4); test2.add(7); test2.add(3); test2.add(6); test2.add(12);
 
+        ArrayList<Integer> test3 = new ArrayList<Integer>();
+        test3.add(2); test3.add(4); test3.add(6); test3.add(12);
+
         oddNumbersExterminator.exterminate(test2);
         System.out.println("Testing normal list");
-        Assert.assertEquals(oddNumbersExterminator.exterminate(test2),test2);
+        Assert.assertEquals(oddNumbersExterminator.exterminate(test2),test3);
     }
 }
