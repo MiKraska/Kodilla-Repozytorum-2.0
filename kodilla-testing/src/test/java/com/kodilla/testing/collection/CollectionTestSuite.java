@@ -33,6 +33,7 @@ public class CollectionTestSuite {
         System.out.println("Testing empty list");
         Assert.assertEquals(oddNumbersExterminator.exterminate(test1),test1);
     }
+
     @Test
     public  void testOddNumberExterminatorNormalList(){
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
@@ -46,5 +47,6 @@ public class CollectionTestSuite {
         oddNumbersExterminator.exterminate(test2);
         System.out.println("Testing normal list");
         Assert.assertEquals(oddNumbersExterminator.exterminate(test2),test3);
+
     }
 }
