@@ -1,9 +1,4 @@
 package com.kodilla.testing.shape;
-
-import com.kodilla.testing.shape.ShapeCollector;
-
-import java.util.*;
-
 import org.junit.*;
 
 public class ShapeCollectorTestSuite {
@@ -30,7 +25,46 @@ public class ShapeCollectorTestSuite {
     @Test
     public void testAddFigure() {
         ShapeCollector shapeCollector = new ShapeCollector();
+        Triangle triangle = new Triangle();
 
-        shapeCollector.addFigure();
+        shapeCollector.addFigure(triangle);
+
+        Assert.assertEquals(1, shapeCollector.showFigures());
+    }
+
+    @Test
+
+    public void testRemoveFigure(){
+        ShapeCollector shapeCollector = new ShapeCollector();
+        Triangle triangle = new Triangle();
+
+        shapeCollector.addFigure(triangle);
+        boolean result = shapeCollector.removeFigure(triangle);
+
+        Assert.assertTrue(result);
+        Assert.assertEquals(0, shapeCollector.showFigures());
+    }
+
+    @Test
+
+    public void testRemovingFigureNotExisting(){
+        ShapeCollector shapeCollector = new ShapeCollector();
+        Triangle triangle = new Triangle();
+
+        boolean result = shapeCollector.removeFigure(triangle);
+
+        Assert.assertFalse(result);
+
+    }
+
+    @Test
+
+    public void testGetFigure(){
+        ShapeCollector shapeCollector = new ShapeCollector();
+        Square square = new Square();
+
+        shapeCollector.addFigure(square);
+
+        Assert.assertEquals(square,shapeCollector.getFigure(shapeCollector.list.size() -1));
     }
 }
