@@ -19,6 +19,5 @@ public class CalculateStatistics {
         double avCP = averageCommentsperPost(statistics.commentsCount(),statistics.postsCount());
         double avCU = averageCommentsperUser(statistics.commentsCount(),statistics.usersNames().size());
         double avPU = averagePostssperUser(statistics.usersNames().size(),statistics.postsCount());
-
     }
 }
