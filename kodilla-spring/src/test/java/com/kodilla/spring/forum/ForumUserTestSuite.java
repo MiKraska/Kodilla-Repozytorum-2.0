@@ -6,16 +6,16 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
-public class testGetUsername {
+public class ForumUserTestSuite {
 
     @Test
-    public void username() {
+    public void testGetUsername() {
         ApplicationContext context =
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
         ForumUser forumUser = context.getBean(ForumUser.class);
 
-        String user = forumUser.username();
+        String user = forumUser.getUsername();
 
-        Assert.assertEquals("Jhon Smith",user);
+        Assert.assertEquals("John Smith",user);
     }
 }

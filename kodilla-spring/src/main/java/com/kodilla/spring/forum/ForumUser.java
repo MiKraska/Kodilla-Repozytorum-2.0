@@ -1,10 +1,18 @@
 package com.kodilla.spring.forum;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ForumUser {
-    public String username(){
-        return "Jhon Smith";
+
+    private final String username;
+
+    public ForumUser() {
+        this.username = "John Smith";
+    }
+
+    public String getUsername() {
+        return username;
     }
 }
