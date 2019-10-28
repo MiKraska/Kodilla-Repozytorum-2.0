@@ -6,6 +6,6 @@ public class Application {
         FlightProcessor flightProcessor = new FlightProcessor();
         System.out.println(flightProcessor.findFlightsFrom("Kraków"));
         System.out.println(flightProcessor.findFlightsTo("Warszawa"));
-        flightProcessor.findFlightVia("Kraków","Gdańsk");
+        flightProcessor.findFlightVia("Gdańsk","Wrocław");
     }
 }

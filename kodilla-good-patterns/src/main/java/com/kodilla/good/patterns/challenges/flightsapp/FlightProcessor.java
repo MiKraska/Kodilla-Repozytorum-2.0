@@ -20,9 +20,9 @@ class FlightProcessor {
                 .collect(Collectors.toList());
     }
 
-    void findFlightVia(String city1, String city2) {
-        List<String> flightsFromCity = findFlightsFrom(city1);
-        List<String> flightsToCity = findFlightsTo(city2);
+    void findFlightVia(String cityFrom, String cityTo) {
+        List<String> flightsFromCity = findFlightsFrom(cityFrom);
+        List<String> flightsToCity = findFlightsTo(cityTo);
 
 
         List<String> list = new ArrayList<>();
@@ -33,6 +33,6 @@ class FlightProcessor {
             }
         }
 
-        System.out.println(city1 + ": Flights via " + list + " to " + city2);
+        System.out.println(cityFrom + ": Flights via " + list + " to " + cityTo);
     }
 }
