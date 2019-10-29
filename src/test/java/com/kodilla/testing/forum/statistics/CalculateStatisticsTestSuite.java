@@ -24,7 +24,7 @@ public class CalculateStatisticsTestSuite {
     }
 
     @Test
-    public void testCalculateAdvStatistic01() {
+    public void testCalculateAdvStatistics01() {
 
         Statistics statisticsMock = mock(Statistics.class);
         List<String> testUserNames = new ArrayList<String>();
@@ -51,7 +51,7 @@ public class CalculateStatisticsTestSuite {
     }
 
     @Test
-    public void testCalculateAdvStatistic02() {
+    public void testCalculateAdvStatistics02() {
         Statistics statisticsMock = mock(Statistics.class);
         List<String> testUserNames = new ArrayList<String>();
         for (int n = 0; n < 1000; n++) {
@@ -77,7 +77,7 @@ public class CalculateStatisticsTestSuite {
     }
 
     @Test
-    public void testCalculateAdvStatistic03() {
+    public void testCalculateAdvStatistics03() {
 
         Statistics statisticsMock = mock(Statistics.class);
         List<String> testUserNames = new ArrayList<String>();
@@ -104,7 +104,7 @@ public class CalculateStatisticsTestSuite {
     }
 
     @Test
-    public void testCalculateAdvStatistic04() {
+    public void testCalculateAdvStatistics04() {
 
         Statistics statisticsMock = mock(Statistics.class);
         List<String> testUserNames = new ArrayList<String>();
@@ -131,7 +131,7 @@ public class CalculateStatisticsTestSuite {
     }
 
     @Test
-    public void testCalculateAdvStatistic05() {
+    public void testCalculateAdvStatistics05() {
 
         Statistics statisticsMock = mock(Statistics.class);
         List<String> testUserNames = new ArrayList<String>();
@@ -158,7 +158,7 @@ public class CalculateStatisticsTestSuite {
     }
 
     @Test
-    public void testCalculateAdvStatistic06() {
+    public void testCalculateAdvStatistics06() {
 
         Statistics statisticsMock = mock(Statistics.class);
         List<String> testUserNames = new ArrayList<String>();
@@ -182,7 +182,7 @@ public class CalculateStatisticsTestSuite {
     }
 
     @Test
-    public void testCalculateAdvStatistic07() {
+    public void testCalculateAdvStatistics07() {
 
         Statistics statisticsMock = mock(Statistics.class);
         List<String> testUserNames = new ArrayList<String>();
