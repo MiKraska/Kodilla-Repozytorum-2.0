@@ -1,6 +1,6 @@
 package com.kodilla.patterns.prototype;
 
-public class Task {
+public final class Task {
     final private String name;
 
     public Task(final String name) {

@@ -3,9 +3,9 @@ package com.kodilla.patterns.strategy.social;
 public class User {
 
     final private String name;
-    SocialPublisher socialPublisher;
+    protected SocialPublisher socialPublisher;
 
-    User(String name) {
+    public User(String name) {
         this.name = name;
     }
 
