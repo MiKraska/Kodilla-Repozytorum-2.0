@@ -17,5 +17,4 @@ class OrderProcessor {
         }
         return new OrderDTO(supplier, isProcessed);
     }
-
 }

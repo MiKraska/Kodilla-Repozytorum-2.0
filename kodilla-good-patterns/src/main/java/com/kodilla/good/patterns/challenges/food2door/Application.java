@@ -9,5 +9,4 @@ public class Application {
         OrderProcessor orderProcessor = new OrderProcessor(new InformationSender(), order.getSupplier());
         orderProcessor.process(order);
     }
-
 }
