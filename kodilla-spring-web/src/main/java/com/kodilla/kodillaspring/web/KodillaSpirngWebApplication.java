@@ -1,4 +1,4 @@
-package com.kodilla.kodillaspirng.web;
+package com.kodilla.kodillaspring.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
