@@ -22,10 +22,10 @@ public class LibraryTestSuite {
         theList.add(book2);
         theList.add(book3);
 
-        Library clonedLbrary = null;
+        Library clonedLibrary = null;
         try {
-            clonedLbrary = library.shallowCopy();
-            clonedLbrary.setName("Second Library");
+            clonedLibrary = library.shallowCopy();
+            clonedLibrary.setName("Second Library");
         } catch (CloneNotSupportedException e) {
             System.out.println(e);
         }
@@ -44,11 +44,11 @@ public class LibraryTestSuite {
 
 
         Assert.assertEquals(4, theList.size());
-        assert clonedLbrary != null;
-        Assert.assertEquals(4, clonedLbrary.getBooks().size());
+        assert clonedLibrary != null;
+        Assert.assertEquals(4, clonedLibrary.getBooks().size());
         assert deepClonedLibrary != null;
         Assert.assertEquals(3, deepClonedLibrary.getBooks().size());
-        Assert.assertEquals(theList, clonedLbrary.getBooks());
-        Assert.assertNotEquals(clonedLbrary.getBooks(), deepClonedLibrary.getBooks());
+        Assert.assertEquals(theList, clonedLibrary.getBooks());
+        Assert.assertNotEquals(clonedLibrary.getBooks(), deepClonedLibrary.getBooks());
     }
 }
