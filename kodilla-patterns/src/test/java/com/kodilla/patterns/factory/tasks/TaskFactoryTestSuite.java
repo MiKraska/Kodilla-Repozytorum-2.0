@@ -10,6 +10,7 @@ public class TaskFactoryTestSuite {
         TaskFactory taskFactory = new TaskFactory();
 
         Task shoppingTask = taskFactory.makeTask(TaskFactory.SHOPPING);
+
         assert shoppingTask != null;
         shoppingTask.executeTask();
 

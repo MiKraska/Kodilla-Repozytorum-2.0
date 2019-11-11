@@ -16,10 +16,10 @@ public class BigmacTestSuite {
                 .bun("Sesame bun")
                 .burgers(3)
                 .sauce("Standard")
-                .ingredient("Salad")
-                .ingredient("Onion")
-                .ingredient("Bacon")
-                .ingredient("Cheese")
+                .addIngredient("Salad")
+                .addIngredient("Onion")
+                .addIngredient("Bacon")
+                .addIngredient("Cheese")
                 .build();
         System.out.println(bigmac);
 

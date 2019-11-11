@@ -49,7 +49,7 @@ public final class Bigmac {
             return this;
         }
 
-        public BigmacBuilder ingredient(String ingredient) {
+        public BigmacBuilder addIngredient(String ingredient) {
             if (!AVAILABLE_INGREDIENTS.contains(ingredient)) {
                 throw new IllegalStateException("Wrong ingredient chosen. Available options are: Salad, Onion, Bacon," +
                         "Pickle, Chili Peppers, Mushrooms, Shrimps, Cheese.");
